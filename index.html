@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">logo</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="/">Home</a></li> 
+                    <li> <a href="about.html">About us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">News</a></li>
+                    <li class="btn"><a href="#">Contacts</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>3D game DEV</h2>
+                <h1>Work that we produce for our clients</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren ipsum has been the industrys standard</p>
+                <button class="btn">Кнопка</button>
+            </div>
+            <img src="img/gamepad.svg" alt="">
+            <div class="container trending">
+                <div class="trending-inner"> <!-- Добавлен контейнер -->
+                    <a href="#" class="see-all">SEE ALL</a>
+                    <h3>Current Trending Games</h3>
+                </div> <!-- Закрывающий тег -->
+                <div class="games">
+                    <div class="block">
+                        <div class="game-item"> <!-- Обёртка -->
+                            <img src="img/game.svg" alt="">
+                            <span><img src="img/fair.svg" alt="">40 Fallowers</span>
+                        </div> <!-- Закрывающий тег -->
+                    </div>
+                    <div class="block">
+                        <div class="game-item"> <!-- Обёртка -->
+                            <img src="img/game2.svg" alt="">
+                            <span><img src="img/fair.svg" alt="">40 Fallowers</span>
+                        </div> <!-- Закрывающий тег -->
+                    </div>
+                    <div class="block">
+                        <div class="game-item">
+                            <img src="img/game3.svg" alt="">
+                            <span><img src="img/fair.svg" alt="">40 Fallowers</span>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="game-item">
+                            <img src="img/game4.svg" alt="">
+                            <span><img src="img/fair.svg" alt="">40 Fallowers</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container big-text">
+                <p>Lorem Ipsum is simply dumy text of the printing and typesetting industry</p>
+            </div>
+
+            <div class="comtainer banner">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                <img src="img/i.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container email">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="block">
+            <div>
+                <h4>Stay in the loop</h4>
+                <p>Subscribe to revice the lastet news</p>
+            </div>
+            <div>
+                <input type="email" id = 'emailFiled' placeholder="Enter email adress">
+                <button onclick="checkEmail()">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">logo</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+                <h4>About us</h4>
+                <ul>
+                    <li>Zeus</li>
+                    <li>Portfolio</li>
+                    <li>Carret</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact us</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>+908 8907 890</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright 2021 Lorem ALL rights Rcevored</p>
+    </footer>
+
+        
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailFiled').value;
+            if (!email.includes('@')) alert('Нет символа @');
+            else if (!email.includes('.')) alert('Нет символа .');
+            else alert('Всё отлично');
+            // alert(email.value);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
